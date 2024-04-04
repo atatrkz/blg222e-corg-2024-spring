@@ -3,5 +3,7 @@ INFO: [VRFC 10-311] analyzing module Register
 INFO: [VRFC 10-311] analyzing module d_flip_flop
 INFO: [VRFC 10-311] analyzing module b16_MUX_4x1
 INFO: [VRFC 10-311] analyzing module bn_add_sub
+INFO: [VRFC 10-311] analyzing module l_or_h
+INFO: [VRFC 10-311] analyzing module b8_MUX_2x1
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/atatr/project_1/project_1.srcs/sim_1/new/Register_test.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Register_test

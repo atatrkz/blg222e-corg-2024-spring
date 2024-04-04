@@ -21,7 +21,7 @@
 
 
 module Register_test();
-    reg [1:0] FunSel;
+    reg [2:0] FunSel;
     reg [15:0] A;
     reg E;
     reg clk;
@@ -35,29 +35,48 @@ module Register_test();
     
             clk = 0;
             E = 0;
-            A = 16'b0000000000000001;
+            A = 16'h0001;
             
-            #100;
+            #50;
             E = 1;
-            FunSel = 2'b01;
+            FunSel = 3'b001;
             
-            #100;
+            #50;
             E = 1;
-            FunSel = 2'b11;
+            FunSel = 3'b011;
             
-            #100;
-            A = 16'b0000000000100100;
+            #50;
+            A = 16'h0024;
             E = 1;
-            FunSel = 2'b10;
+            FunSel = 3'b010;
     
-            #100;
+            #50;
             E = 1;
-            FunSel = 2'b00;
+            FunSel = 3'b000;
             
-            #100;
+            #50;
             E = 1;
-            FunSel = 2'b01;
-    
+            FunSel = 3'b001;
+            
+            #50;
+            A = 16'h2030;
+            E = 1;
+            FunSel = 3'b100;
+            
+            #50;
+            A = 16'habcd;
+            E = 1;
+            FunSel = 3'b101;
+
+            #50;
+            A = 16'hffff;
+            E = 1;
+            FunSel = 3'b110;
+            
+            #50;
+            A = 16'hb840;
+            E = 1;
+            FunSel = 3'b111;
             
         end
 endmodule

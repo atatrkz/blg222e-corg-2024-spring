@@ -3,11 +3,15 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto c275a77ed0434bdfa87ff5070134d15f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Register_test_behav xil_defaultlib.Register_test xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 2 for port S0 [C:/Users/atatr/project_1/project_1.srcs/sources_1/new/Register.v:28]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 17 for port D0 [C:/Users/atatr/project_1/project_1.srcs/sources_1/new/Register.v:30]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.b16_MUX_4x1
+Compiling module xil_defaultlib.l_or_h
+Compiling module xil_defaultlib.b8_MUX_2x1
 Compiling module xil_defaultlib.d_flip_flop
 Compiling module xil_defaultlib.bn_add_sub
 Compiling module xil_defaultlib.Register
